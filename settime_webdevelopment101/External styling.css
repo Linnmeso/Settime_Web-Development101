@@ -1,0 +1,24 @@
+p {
+    color: white;
+    background-color: aquamarine;
+}
+h1 {
+    color: cornflowerblue;
+    background-color: black;
+}
+h2 {
+    color: chocolate;
+    background-color: rgb(30, 24, 17);
+}
+.one {
+    color: chartreuse;
+    background-color: rgb(147, 58, 58);
+}
+.two {
+    color: blue;
+    background-color: darkred;
+}
+#p1 {
+    color: deeppink;
+    background-color: indigo;
+}
