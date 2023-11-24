@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE CSS MEDIA QUERY</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .cont {
+            width: 100%;
+            height: 400px;
+            background-color: red;
+        }
+        h1 {
+            font-size: 4rem;
+        }
+        @media screen and (max-width:768) {
+            .cont {
+                background-color: blue;
+            }
+            h1 {
+                font-size: 3rem;
+            }
+        }
+        @media screen and (max-width: 480) {
+            .cont {
+                background-color: green;
+            }
+            h1 {
+                font-size: 2rem ;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <h1>This is cool</h1>
+    </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>The Hover Effect</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            transition-property: all;
+            transition-delay: 0s;
+            transition-duration: 500ms;
+            transition-timing-function: ease-in;
+        }
+        .box:hover {
+            /* background-color: green; */
+            /* transform: translate(300px, 200px); */
+            /* transform: rotate(-70deg); */
+            /* transform: skew(-50deg); */
+            transform: scale(1.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+</body>
+</html>
