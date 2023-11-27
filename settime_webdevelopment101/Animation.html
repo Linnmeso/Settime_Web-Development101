@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE CSS ANIMATION</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            animation: box 1s ease-out 0s infinite alternate-reverse;
+        }
+        @keyframes box {
+            /* from {
+                background-color: red;
+                transform: translate(0);
+            }
+            to {
+                background-color: green;
+                transform: translate(200px, 200px);
+            } */
+            0% {
+                background-color: red;
+                transform: translate(0);
+            }
+            30% {
+                background-color: yellow;
+            }
+            60% {
+                background-color: green;
+            }
+            100% {
+                background-color: blue;
+                transform: translate(200px,0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+    </div>
+</body>
+</html>

@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
         .red {
             width: 200px;
             height: 150px;
@@ -60,19 +65,20 @@
             background-color: green;
             transform: translate(800px, 0);
         }
-        button:hover {
-            background-color: white;
-            border-color: blue;
-            transition-property: all;
-            transition-delay: 0s;
-            transition-duration: 500ms;
-            transition-timing-function: ease-in;
-        }
         button {
             margin-top: 2rem;
             padding: 1rem 2rem;
             background-color: darkblue;
-            border: 0.2rem solid blue;
+            border: 0.2rem solid transparent;
+            transition-property: all;
+            transition-delay: 0s;
+            transition-duration: 500ms;
+            transition-timing-function: ease-in-out;
+        }
+        button:hover {
+            background-color: white;
+            border-color: blue;
+            transform: scale(1.05);
         }
     </style>
 </head>
